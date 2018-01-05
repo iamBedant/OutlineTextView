@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.iambedant.outlinetextview.MainActivity">
 
-    <com.iambedant.library.OutlineTextView
+    <com.iambedant.text.OutlineTextView
         android:id="@+id/your_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,4 +23,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:outlineColor="@android:color/black"
         app:outlineWidth="1.7" />
+
+
 </android.support.constraint.ConstraintLayout>

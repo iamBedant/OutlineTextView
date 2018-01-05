@@ -1,4 +1,4 @@
-package com.iambedant.library
+package com.iambedant.text
 
 import android.content.Context
 
