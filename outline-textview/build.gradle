@@ -1,6 +1,34 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.0'
+    }
+}
+
+ext {
+    bintrayRepo = 'OutlineTextView' // your repo name
+    bintrayName = 'outline-textview' // has to be same as your library module name
+    publishedGroupId = 'com.iamBedant' // your module package name
+    libraryName = 'outline-textview'
+    artifact = 'outline-textview' // has to be same as your library module name
+    libraryDescription = 'A set of methods used to manipulate time object'
+    siteUrl = 'https://github.com/iamBedant/OutlineTextView'
+    gitUrl = 'https://github.com/iamBedant/OutlineTextView.git'
+    libraryVersion = '1.0'
+    developerId = 'iambedant'
+    developerName = 'Bedanta Bikash Borah'
+    developerEmail = 'bebi2527@live.in'
+    licenseName = 'MIT License'
+    licenseUrl = 'https://opensource.org/licenses/MIT'
+    allLicenses = ["MIT"]
+}
+
+
 android {
     compileSdkVersion 26
 
@@ -37,3 +65,8 @@ dependencies {
 repositories {
     mavenCentral()
 }
+tasks.withType(Javadoc).all {
+    enabled = false
+}
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
