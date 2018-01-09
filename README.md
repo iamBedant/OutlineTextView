@@ -5,7 +5,7 @@ Android TextView with Outline/Stroke
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/iamBedant/OutlineTextView/blob/master/LICENSE)
 
 ## Example
-<img src="sc/s1.png" alt="Example 1" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="sc/s1.png" alt="Example 1" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
 <img src="sc/s2.png" alt="Example 2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Quick Setup
