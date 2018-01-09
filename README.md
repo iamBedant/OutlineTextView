@@ -67,3 +67,6 @@ Then add the dependency
   app:outlineWidth="0.7" />
 ```
 
+## License
+
+TimeLineView is distributed under the MIT license. [See LICENSE](https://github.com/iamBedant/OutlineTextView/blob/master/LICENSE) for details.
