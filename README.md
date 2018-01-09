@@ -69,4 +69,4 @@ Then add the dependency
 
 ## License
 
-TimeLineView is distributed under the MIT license. [See LICENSE](https://github.com/iamBedant/OutlineTextView/blob/master/LICENSE) for details.
+OutlineTextView is distributed under the MIT license. [See LICENSE](https://github.com/iamBedant/OutlineTextView/blob/master/LICENSE) for details.
