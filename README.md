@@ -4,6 +4,10 @@ Android TextView with Outline/Stroke
 [![](https://jitpack.io/v/iamBedant/OutlineTextView.svg)](https://jitpack.io/#iamBedant/OutlineTextView)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/iamBedant/OutlineTextView/blob/master/LICENSE)
 
+## Example
+<img src="sc/s1.png" alt="Example 1" width="240">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="sc/s1.png" alt="Example 2" width="240">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 ## Quick Setup
 ### 1. Include library
 
