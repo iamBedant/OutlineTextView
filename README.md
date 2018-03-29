@@ -27,7 +27,7 @@ Then add the following line
 
 ``` gradle
 dependencies {
-     implementation 'com.github.iamBedant:OutlineTextView:1.0.3'
+     implementation 'com.github.iamBedant:OutlineTextView:1.0.4'
 }
 ```
 
@@ -49,7 +49,7 @@ Then add the dependency
 <dependency>
 	    <groupId>com.github.iamBedant</groupId>
 	    <artifactId>OutlineTextView</artifactId>
-	    <version>1.0.3</version>
+	    <version>1.0.4</version>
 </dependency>
 ```
 
