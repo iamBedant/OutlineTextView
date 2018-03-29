@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OutlineTextView.iml" filepath="$PROJECT_DIR$/OutlineTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OutlineTextView.iml" filepath="$PROJECT_DIR$/OutlineTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/outline-textview/library.iml" filepath="$PROJECT_DIR$/outline-textview/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/outline-textview/outline-textview.iml" filepath="$PROJECT_DIR$/outline-textview/outline-textview.iml" />
       <module fileurl="file://$PROJECT_DIR$/outline-textview/outline-textview.iml" filepath="$PROJECT_DIR$/outline-textview/outline-textview.iml" />
     </modules>
   </component>

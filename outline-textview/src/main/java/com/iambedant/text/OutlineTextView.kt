@@ -3,6 +3,9 @@ package com.iambedant.text
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
+import android.os.Build
+import android.support.annotation.RequiresApi
+import android.support.v7.widget.AppCompatTextView
 import android.util.AttributeSet
 import android.widget.TextView
 import android.util.TypedValue
@@ -11,7 +14,7 @@ import android.util.TypedValue
 /**
  * Created by @iamBedant on 05/01/18.
  */
-class OutlineTextView : TextView {
+class OutlineTextView : AppCompatTextView {
 
     private val defaultStrokeWidth = 0F
     private var isDrawing: Boolean = false
@@ -33,12 +36,6 @@ class OutlineTextView : TextView {
         initResources(context, attrs)
 
     }
-
-    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int) : super(context, attrs, defStyleAttr, defStyleRes) {
-        initResources(context, attrs)
-
-    }
-
 
     private fun initResources(context: Context?, attrs: AttributeSet?) {
         if (attrs != null) {
