@@ -14,41 +14,31 @@ import android.util.TypedValue
 /**
  * Created by @iamBedant on 05/01/18.
  */
-class OutlineTextView : AppCompatTextView {
+class OutlineTextView @JvmOverloads constructor(
+        context: Context,
+        attrs: AttributeSet? = null,
+        defStyleAttr: Int = 0
+) : AppCompatTextView(context, attrs, defStyleAttr) {
 
-    private val defaultStrokeWidth = 0F
+    /**
+     * Constant default values for Outline TextView
+     */
+    companion object {
+        private const val DEFAULT_STROKE_WIDTH = 0F
+    }
+
     private var isDrawing: Boolean = false
 
-    private var strokeColor: Int = 0
-    private var strokeWidth: Float = 0.toFloat()
+    private var strokeColor: Int = currentTextColor
+    private var strokeWidth: Float = DEFAULT_STROKE_WIDTH
 
-    constructor(context: Context?) : super(context) {
-        initResources(context, null)
-
-    }
-
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) {
-        initResources(context, attrs)
-
-    }
-
-    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        initResources(context, attrs)
-
-    }
-
-    private fun initResources(context: Context?, attrs: AttributeSet?) {
-        if (attrs != null) {
-            val a = context?.obtainStyledAttributes(attrs, R.styleable.outlineAttrs)
-            strokeColor = a!!.getColor(R.styleable.outlineAttrs_outlineColor,
-                    currentTextColor)
-            strokeWidth = a.getFloat(R.styleable.outlineAttrs_outlineWidth,
-                    defaultStrokeWidth)
-
-            a.recycle()
-        } else {
-            strokeColor = currentTextColor
-            strokeWidth = defaultStrokeWidth
+    init {
+        attrs?.let {
+            context.obtainStyledAttributes(it, R.styleable.outlineAttrs).apply {
+                strokeColor = getColor(R.styleable.outlineAttrs_outlineColor, currentTextColor)
+                strokeWidth = getFloat(R.styleable.outlineAttrs_outlineWidth, DEFAULT_STROKE_WIDTH)
+                recycle()
+            }
         }
         setStrokeWidth(strokeWidth)
     }
@@ -73,7 +63,6 @@ class OutlineTextView : AppCompatTextView {
         if (isDrawing) return
         super.invalidate()
     }
-
 
     override fun onDraw(canvas: Canvas) {
         if (strokeWidth > 0) {
