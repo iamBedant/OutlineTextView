@@ -27,7 +27,7 @@ Then add the following line
 
 ``` gradle
 dependencies {
-     implementation 'com.github.iamBedant:OutlineTextView:1.0.4'
+	implementation 'com.github.iamBedant:OutlineTextView:1.0.5'
 }
 ```
 
